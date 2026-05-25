@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gfonseca Security</title>
+    <link rel="stylesheet" href="/static/css/style.css?v=224" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="ui-scaler">
+        <div class="app-container">
+
+            <!-- NAVBAR -->
+            <header class="app-navbar">
+                <div class="brand">
+                    <div class="brand-badge">
+                        <span class="badge badge-success">
+                            <i data-lucide="sparkles" style="width:14px;height:14px;margin-right:6px;"></i>
+                            v2.0
+                        </span>
+                    </div>
+		    <!-- c     <h1>Gfonseca <span>Security</span></h1> -->
+                </div>
+                <div class="api-status">
+                    <div class="status-dot"></div>
+                    <span>System Operational</span>
+                </div>
+            </header>
+
+            <!-- MAIN -->
+            <main class="main-content">
+                <section class="hero-section">
+                    <h2>Gfonseca <span>SECURITY</span></h2>
+                    <p>Advanced engine for service discovery, DNS , TLS inspection, and automated infrastructure fingerprinting.</p>
+                </section>
+
+                <section class="search-box">
+                    <div class="input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="target" placeholder="Enter target domain or IP..." autocomplete="off" spellcheck="false" />
+                    </div>
+                    <button onclick="lookup()">
+                        <span class="btn-content">
+                            <i data-lucide="activity"></i>
+                            Analyze Target
+                        </span>
+                    </button>
+                </section>
+
+                <section id="results" class="results-grid">
+                    <div class="welcome-card">
+                        <div class="terminal-icon-wrapper">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <h3>Ready for Deep Search</h3>
+                        <p>Enter a target above to initiate the scan. The system will process DNS, SSL, and network metadata in real-time.</p>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+   <script src="/static/js/app.js?v=306"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
