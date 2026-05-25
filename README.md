@@ -19,12 +19,13 @@ Gfonseca Security Dashboard is a self-hosted OSINT and network reconnaissance to
 - 🔒 **SSL/TLS certificate** inspection
 - 📍 **Geolocation** (city, region, country)
 
-
-🔗 **Live:** [security.gfonseca.online](https://security.gfonseca.online)
-
 ---
 
+
 ## 📸 Preview
+
+
+🔗 **Live:** [security.gfonseca.online](https://security.gfonseca.online)
 
 ![Dashboard](assets/dash.png)
 
