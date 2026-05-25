@@ -20,6 +20,10 @@ Gfonseca Security Dashboard is a self-hosted OSINT and network reconnaissance to
 - 📍 **Geolocation** (city, region, country)
 
 ---
+## 📸 Preview
+
+![Dashboard](assets/screenshot.png)
+
 
 ## 🏗️ Architecture
 
