@@ -24,8 +24,7 @@ Gfonseca Security Dashboard is a self-hosted OSINT and network reconnaissance to
 
 ## 📸 Preview
 
-
-🔗 **Live:** [security.gfonseca.online](https://security.gfonseca.online)
+🔗 **Live:** <a href="https://security.gfonseca.online" target="_blank">security.gfonseca.online</a>
 
 ![Dashboard](assets/dash.png)
 
