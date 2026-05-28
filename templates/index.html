@@ -1,71 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gfonseca Security</title>
-    <link rel="stylesheet" href="/static/css/style.css?v=224" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/static/css/style.css?v=300" />
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-    <div class="ui-scaler">
-        <div class="app-container">
-
-            <!-- NAVBAR -->
-            <header class="app-navbar">
-                <div class="brand">
-                    <div class="brand-badge">
-                        <span class="badge badge-success">
-                            <i data-lucide="sparkles" style="width:14px;height:14px;margin-right:6px;"></i>
-                            v2.0
-                        </span>
-                    </div>
-		    <!-- c     <h1>Gfonseca <span>Security</span></h1> -->
-                </div>
-                <div class="api-status">
-                    <div class="status-dot"></div>
-                    <span>System Operational</span>
-                </div>
-            </header>
-
-            <!-- MAIN -->
-            <main class="main-content">
-                <section class="hero-section">
-                    <h2>Gfonseca <span>SECURITY</span></h2>
-                    <p>Advanced engine for service discovery, DNS , TLS inspection, and automated infrastructure fingerprinting.</p>
-                </section>
-
-                <section class="search-box">
-                    <div class="input-wrapper">
-                        <i data-lucide="search" class="search-icon"></i>
-                        <input type="text" id="target" placeholder="Enter target domain or IP..." autocomplete="off" spellcheck="false" />
-                    </div>
-                    <button onclick="lookup()">
-                        <span class="btn-content">
-                            <i data-lucide="activity"></i>
-                            Analyze Target
-                        </span>
-                    </button>
-                </section>
-
-                <section id="results" class="results-grid">
-                    <div class="welcome-card">
-                        <div class="terminal-icon-wrapper">
-                            <i data-lucide="terminal"></i>
-                        </div>
-                        <h3>Ready for Deep Search</h3>
-                        <p>Enter a target above to initiate the scan. The system will process DNS, SSL, and network metadata in real-time.</p>
-                    </div>
-                </section>
-            </main>
-
-        </div>
+    <div class="ambient-layer" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
 
-   <script src="/static/js/app.js?v=306"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+    <div class="app-container">
+
+        <header class="app-navbar">
+            <div class="brand">
+                <div class="brand-mark">
+                    <i data-lucide="shield"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Gfonseca <span>Security</span></h1>
+                    <span class="badge badge-success">
+                        <i data-lucide="sparkles"></i>
+                        v2.0
+                    </span>
+                </div>
+            </div>
+            <div class="api-status">
+                <div class="status-dot"></div>
+                <span>System Operational</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero-section">
+                <p class="hero-eyebrow">Infrastructure Intelligence</p>
+                <h2>Gfonseca <span>SECURITY</span></h2>
+                <p class="hero-desc">Advanced engine for service discovery, DNS, TLS inspection, and automated infrastructure fingerprinting.</p>
+                <div class="hero-tags">
+                    <span class="hero-tag"><i data-lucide="globe"></i> DNS</span>
+                    <span class="hero-tag"><i data-lucide="shield-check"></i> TLS</span>
+                    <span class="hero-tag"><i data-lucide="cpu"></i> Ports</span>
+                    <span class="hero-tag"><i data-lucide="file-text"></i> WHOIS</span>
+                </div>
+            </section>
+
+            <section class="search-box">
+                <div class="input-wrapper">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="target" placeholder="Enter target domain or IP..." autocomplete="off" spellcheck="false" />
+                    <kbd class="input-hint">Enter ↵</kbd>
+                </div>
+                <button type="button" onclick="lookup()" class="btn-analyze">
+                    <span class="btn-content">
+                        <i data-lucide="activity"></i>
+                        Analyze Target
+                    </span>
+                    <span class="btn-shine" aria-hidden="true"></span>
+                </button>
+            </section>
+
+            <section id="results" class="results-grid">
+                <div class="welcome-card">
+                    <div class="welcome-glow" aria-hidden="true"></div>
+                    <div class="terminal-icon-wrapper">
+                        <i data-lucide="terminal"></i>
+                    </div>
+                    <h3>Ready for Deep Search</h3>
+                    <p>Enter a target above to initiate the scan. The system will process DNS, SSL, and network metadata in real-time.</p>
+                    <div class="welcome-steps">
+                        <div class="welcome-step">
+                            <span class="step-num">01</span>
+                            <span>Input target</span>
+                        </div>
+                        <div class="welcome-step-divider"></div>
+                        <div class="welcome-step">
+                            <span class="step-num">02</span>
+                            <span>Live scan</span>
+                        </div>
+                        <div class="welcome-step-divider"></div>
+                        <div class="welcome-step">
+                            <span class="step-num">03</span>
+                            <span>Intel cards</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="/static/js/app.js?v=307"></script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

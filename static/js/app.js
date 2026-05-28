@@ -149,7 +149,7 @@ async function lookup() {
         ${createSkeletonCard("SSL Certificate", "ssl-card", "shield-check")}
     `;
 
-    lucide.createIcons();
+    if (typeof lucide !== "undefined") lucide.createIcons();
 
     activeEventSource = initRealProgress(target, "ports-card-body");
     const portsContainer = document.getElementById("ports-card-body");
@@ -172,6 +172,7 @@ async function lookup() {
                 </div>
             `;
             portsContainer.insertAdjacentHTML('beforeend', portHtml);
+            if (typeof lucide !== "undefined") lucide.createIcons();
         }
     });
 
