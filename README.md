@@ -18,7 +18,7 @@
 
 **Web dashboard for infrastructure reconnaissance** with a modern dark UI and real-time SSE feedback.
 
-[![Live Demo](https://img.shields.io/badge/🌐_Demo-localhost:8080-8B5CF6?style=flat-square)](http://localhost:8080)
+[![Live Demo](https://img.shields.io/badge/🌐_Demo-localhost:8080-8B5CF6?style=flat-square)](https://security.gfonseca.online)
 [![SSE](https://img.shields.io/badge/⚡_Realtime-SSE-EC4899?style=flat-square)](#-api-reference)
 [![UI](https://img.shields.io/badge/🎨_UI-Dark_Glassmorphism-6366F1?style=flat-square)](#-features)
 
